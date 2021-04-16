@@ -1,0 +1,157 @@
+{
+    "variables": [],
+    "info": {
+        "name": "Laravel API",
+        "_postman_id": "67911d2f-ba87-4d41-8d2b-8a4e310b3a51",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.0.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "general",
+            "description": "",
+            "item": [
+                {
+                    "name": "Display a listing of the Links.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "ShortnerLink.test",
+                            "path": "api\/shortner-link\/v0\/links",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Store a Link.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "ShortnerLink.test",
+                            "path": "api\/shortner-link\/v0\/links\/store",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"main_link\": \"sint\"\n}"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Update a Link.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "ShortnerLink.test",
+                            "path": "api\/shortner-link\/v0\/links\/update",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"link\": \"odit\"\n}"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Retirve short link\n[write short link in url]",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "ShortnerLink.test",
+                            "path": "api\/shortner-link\/v0\/:short_link",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Retirve short link from Database\n[write short link in url]",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "ShortnerLink.test",
+                            "path": "api\/shortner-link\/v0\/database\/:short_link",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        }
+    ]
+}

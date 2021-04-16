@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/all.js"></script>
+
+
+          <script>
+        $(function() {
+            setupLanguages(["bash","javascript"]);
+        });
+      </script>
+      </head>
+
+  <body class="">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" />
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+        <img src="images/logo.png" />
+                    <div class="lang-selector">
+                                  <a href="#" data-language-name="bash">bash</a>
+                                  <a href="#" data-language-name="javascript">javascript</a>
+                            </div>
+                            <div class="search">
+              <input type="text" class="search" id="input-search" placeholder="Search">
+            </div>
+            <ul class="search-results"></ul>
+              <div id="toc">
+      </div>
+                    <ul class="toc-footer">
+                                  <li><a href='http://github.com/mpociot/documentarian'>Documentation Powered by Documentarian</a></li>
+                            </ul>
+            </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+          <!-- START_INFO -->
+<h1>Info</h1>
+<p>Welcome to the generated API reference.
+<a href="http://ShortnerLink.test/docs/collection.json">Get Postman Collection</a></p>
+<!-- END_INFO -->
+<h1>general</h1>
+<!-- START_4fb33e62cdf2404b0d17d47c06d82b91 -->
+<h2>Display a listing of the Links.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://ShortnerLink.test/api/shortner-link/v0/links" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://ShortnerLink.test/api/shortner-link/v0/links"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (500):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Server Error"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/shortner-link/v0/links</code></p>
+<h4>URL Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>page</code></td>
+<td>optional</td>
+<td>optional . Example : 0 starts from zero</td>
+</tr>
+<tr>
+<td><code>per_page</code></td>
+<td>optional</td>
+<td>optional . Example : 10</td>
+</tr>
+</tbody>
+</table>
+<!-- END_4fb33e62cdf2404b0d17d47c06d82b91 -->
+<!-- START_b9daf4e147b99e5897b47db16d489e84 -->
+<h2>Store a Link.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://ShortnerLink.test/api/shortner-link/v0/links/store" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -d '{"main_link":"sint"}'
+</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://ShortnerLink.test/api/shortner-link/v0/links/store"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "main_link": "sint"
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+    body: body
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/shortner-link/v0/links/store</code></p>
+<h4>Body Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>main_link</code></td>
+<td>required</td>
+<td>optional</td>
+<td>. Example : <a href="https://laravel.com/">https://laravel.com/</a></td>
+</tr>
+</tbody>
+</table>
+<!-- END_b9daf4e147b99e5897b47db16d489e84 -->
+<!-- START_c4b6dcffb1967b20739985b66e02a68c -->
+<h2>Update a Link.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://ShortnerLink.test/api/shortner-link/v0/links/update" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -d '{"link":"odit"}'
+</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://ShortnerLink.test/api/shortner-link/v0/links/update"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "link": "odit"
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+    body: body
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/shortner-link/v0/links/update</code></p>
+<h4>Body Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>link</code></td>
+<td>required</td>
+<td>optional</td>
+<td>. Example : <a href="https://laravel.com/">https://laravel.com/</a></td>
+</tr>
+</tbody>
+</table>
+<!-- END_c4b6dcffb1967b20739985b66e02a68c -->
+<!-- START_3e14b696df6a878345188477836e7f3d -->
+<h2>Retirve short link</h2>
+<p>[write short link in url]</p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://ShortnerLink.test/api/shortner-link/v0/1" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://ShortnerLink.test/api/shortner-link/v0/1"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (500):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Server Error"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/shortner-link/v0/{short_link}</code></p>
+<!-- END_3e14b696df6a878345188477836e7f3d -->
+<!-- START_1f14a96cf9e01c7d3d958c8874eecb53 -->
+<h2>Retirve short link from Database</h2>
+<p>[write short link in url]</p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://ShortnerLink.test/api/shortner-link/v0/database/1" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://ShortnerLink.test/api/shortner-link/v0/database/1"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (500):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Server Error"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/shortner-link/v0/database/{short_link}</code></p>
+<!-- END_1f14a96cf9e01c7d3d958c8874eecb53 -->
+      </div>
+      <div class="dark-box">
+                        <div class="lang-selector">
+                                    <a href="#" data-language-name="bash">bash</a>
+                                    <a href="#" data-language-name="javascript">javascript</a>
+                              </div>
+                </div>
+    </div>
+  </body>
+</html>

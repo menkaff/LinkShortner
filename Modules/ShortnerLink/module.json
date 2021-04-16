@@ -1,0 +1,13 @@
+{
+    "name": "ShortnerLink",
+    "alias": "shortnerlink",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ShortnerLink\\Providers\\ShortnerLinkServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
