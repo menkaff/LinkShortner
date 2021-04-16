@@ -46,7 +46,7 @@
           <!-- START_INFO -->
 <h1>Info</h1>
 <p>Welcome to the generated API reference.
-<a href="http://ShortnerLink.test/docs/collection.json">Get Postman Collection</a></p>
+<a href="http://0.0.0.0:8084/docs/collection.json">Get Postman Collection</a></p>
 <!-- END_INFO -->
 <h1>general</h1>
 <!-- START_4fb33e62cdf2404b0d17d47c06d82b91 -->
@@ -55,11 +55,11 @@
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://ShortnerLink.test/api/shortner-link/v0/links" \
+    -G "http://0.0.0.0:8084/api/shortner-link/v0/links" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://ShortnerLink.test/api/shortner-link/v0/links"
+    "http://0.0.0.0:8084/api/shortner-link/v0/links"
 );
 
 let headers = {
@@ -110,13 +110,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X POST \
-    "http://ShortnerLink.test/api/shortner-link/v0/links/store" \
+    "http://0.0.0.0:8084/api/shortner-link/v0/links/store" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"main_link":"sint"}'
+    -d '{"main_link":"https:\/\/laravel.com\/"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://ShortnerLink.test/api/shortner-link/v0/links/store"
+    "http://0.0.0.0:8084/api/shortner-link/v0/links/store"
 );
 
 let headers = {
@@ -125,7 +125,7 @@ let headers = {
 };
 
 let body = {
-    "main_link": "sint"
+    "main_link": "https:\/\/laravel.com\/"
 }
 
 fetch(url, {
@@ -150,9 +150,9 @@ fetch(url, {
 <tbody>
 <tr>
 <td><code>main_link</code></td>
-<td>required</td>
+<td>string</td>
 <td>optional</td>
-<td>. Example : <a href="https://laravel.com/">https://laravel.com/</a></td>
+<td>Link for shortening .</td>
 </tr>
 </tbody>
 </table>
@@ -163,13 +163,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X POST \
-    "http://ShortnerLink.test/api/shortner-link/v0/links/update" \
+    "http://0.0.0.0:8084/api/shortner-link/v0/links/update" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"link":"odit"}'
+    -d '{"main_link":"https:\/\/laravel.com\/"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://ShortnerLink.test/api/shortner-link/v0/links/update"
+    "http://0.0.0.0:8084/api/shortner-link/v0/links/update"
 );
 
 let headers = {
@@ -178,7 +178,7 @@ let headers = {
 };
 
 let body = {
-    "link": "odit"
+    "main_link": "https:\/\/laravel.com\/"
 }
 
 fetch(url, {
@@ -202,10 +202,10 @@ fetch(url, {
 </thead>
 <tbody>
 <tr>
-<td><code>link</code></td>
-<td>required</td>
+<td><code>main_link</code></td>
+<td>string</td>
 <td>optional</td>
-<td>. Example : <a href="https://laravel.com/">https://laravel.com/</a></td>
+<td>Link for shortening .</td>
 </tr>
 </tbody>
 </table>
@@ -217,11 +217,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://ShortnerLink.test/api/shortner-link/v0/1" \
+    -G "http://0.0.0.0:8084/api/shortner-link/v0/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://ShortnerLink.test/api/shortner-link/v0/1"
+    "http://0.0.0.0:8084/api/shortner-link/v0/1"
 );
 
 let headers = {
@@ -251,11 +251,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://ShortnerLink.test/api/shortner-link/v0/database/1" \
+    -G "http://0.0.0.0:8084/api/shortner-link/v0/database/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://ShortnerLink.test/api/shortner-link/v0/database/1"
+    "http://0.0.0.0:8084/api/shortner-link/v0/database/1"
 );
 
 let headers = {

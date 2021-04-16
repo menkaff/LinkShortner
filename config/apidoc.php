@@ -12,7 +12,7 @@ return [
     /*
      * Static output folder: HTML documentation and assets will be generated in this folder.
      */
-   'output_folder' => 'public/docs',
+    'output_folder' => 'public/docs',
 
     /*
      * Settings for `laravel` type output.
@@ -70,7 +70,7 @@ return [
         /*
          * The name for the exported Postman collection. Default: config('app.name')." API"
          */
-        'name' => null,
+        'name' => "Laravel Shortner Link API",
 
         /*
          * The description for the exported Postman collection.

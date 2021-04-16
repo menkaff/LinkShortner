@@ -28,7 +28,7 @@ class ShortnerLinkController extends Controller
 
     /**
      * Store a Link.
-     * @bodyParam main_link required . Example : https://laravel.com/
+     * @bodyParam main_link string Link for shortening . Example: https://laravel.com/
      */
     public function store(Request $request)
     {
@@ -48,7 +48,7 @@ class ShortnerLinkController extends Controller
 
     /**
      * Update a Link.
-     * @bodyParam link required . Example : https://laravel.com/
+     * @bodyParam main_link string Link for shortening . Example: https://laravel.com/
      */
     public function update(Request $request)
     {

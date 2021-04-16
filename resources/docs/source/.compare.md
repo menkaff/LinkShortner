@@ -16,7 +16,7 @@ toc_footers:
 # Info
 
 Welcome to the generated API reference.
-[Get Postman Collection](http://ShortnerLink.test/docs/collection.json)
+[Get Postman Collection](http://0.0.0.0:8084/docs/collection.json)
 
 <!-- END_INFO -->
 
@@ -30,14 +30,14 @@ Welcome to the generated API reference.
 
 ```bash
 curl -X GET \
-    -G "http://ShortnerLink.test/api/shortner-link/v0/links" \
+    -G "http://0.0.0.0:8084/api/shortner-link/v0/links" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://ShortnerLink.test/api/shortner-link/v0/links"
+    "http://0.0.0.0:8084/api/shortner-link/v0/links"
 );
 
 let headers = {
@@ -81,16 +81,16 @@ Parameter | Status | Description
 
 ```bash
 curl -X POST \
-    "http://ShortnerLink.test/api/shortner-link/v0/links/store" \
+    "http://0.0.0.0:8084/api/shortner-link/v0/links/store" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"main_link":"sint"}'
+    -d '{"main_link":"https:\/\/laravel.com\/"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://ShortnerLink.test/api/shortner-link/v0/links/store"
+    "http://0.0.0.0:8084/api/shortner-link/v0/links/store"
 );
 
 let headers = {
@@ -99,7 +99,7 @@ let headers = {
 };
 
 let body = {
-    "main_link": "sint"
+    "main_link": "https:\/\/laravel.com\/"
 }
 
 fetch(url, {
@@ -119,7 +119,7 @@ fetch(url, {
 #### Body Parameters
 Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
-    `main_link` | required |  optional  | . Example : https://laravel.com/
+    `main_link` | string |  optional  | Link for shortening .
     
 <!-- END_b9daf4e147b99e5897b47db16d489e84 -->
 
@@ -130,16 +130,16 @@ Parameter | Type | Status | Description
 
 ```bash
 curl -X POST \
-    "http://ShortnerLink.test/api/shortner-link/v0/links/update" \
+    "http://0.0.0.0:8084/api/shortner-link/v0/links/update" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"link":"odit"}'
+    -d '{"main_link":"https:\/\/laravel.com\/"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://ShortnerLink.test/api/shortner-link/v0/links/update"
+    "http://0.0.0.0:8084/api/shortner-link/v0/links/update"
 );
 
 let headers = {
@@ -148,7 +148,7 @@ let headers = {
 };
 
 let body = {
-    "link": "odit"
+    "main_link": "https:\/\/laravel.com\/"
 }
 
 fetch(url, {
@@ -168,7 +168,7 @@ fetch(url, {
 #### Body Parameters
 Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
-    `link` | required |  optional  | . Example : https://laravel.com/
+    `main_link` | string |  optional  | Link for shortening .
     
 <!-- END_c4b6dcffb1967b20739985b66e02a68c -->
 
@@ -180,14 +180,14 @@ Parameter | Type | Status | Description
 
 ```bash
 curl -X GET \
-    -G "http://ShortnerLink.test/api/shortner-link/v0/1" \
+    -G "http://0.0.0.0:8084/api/shortner-link/v0/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://ShortnerLink.test/api/shortner-link/v0/1"
+    "http://0.0.0.0:8084/api/shortner-link/v0/1"
 );
 
 let headers = {
@@ -226,14 +226,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "http://ShortnerLink.test/api/shortner-link/v0/database/1" \
+    -G "http://0.0.0.0:8084/api/shortner-link/v0/database/1" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://ShortnerLink.test/api/shortner-link/v0/database/1"
+    "http://0.0.0.0:8084/api/shortner-link/v0/database/1"
 );
 
 let headers = {

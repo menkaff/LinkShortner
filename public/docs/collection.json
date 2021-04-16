@@ -1,8 +1,8 @@
 {
     "variables": [],
     "info": {
-        "name": "Laravel API",
-        "_postman_id": "67911d2f-ba87-4d41-8d2b-8a4e310b3a51",
+        "name": "Laravel Shortner Link API",
+        "_postman_id": "ab226ca1-8257-427d-acf4-ea15eca7e64f",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.0.0\/collection.json"
     },
@@ -16,7 +16,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "ShortnerLink.test",
+                            "host": "0.0.0.0:8084",
                             "path": "api\/shortner-link\/v0\/links",
                             "query": []
                         },
@@ -44,7 +44,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "ShortnerLink.test",
+                            "host": "0.0.0.0:8084",
                             "path": "api\/shortner-link\/v0\/links\/store",
                             "query": []
                         },
@@ -61,7 +61,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"main_link\": \"sint\"\n}"
+                            "raw": "{\n    \"main_link\": \"https:\\\/\\\/laravel.com\\\/\"\n}"
                         },
                         "description": "",
                         "response": []
@@ -72,7 +72,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "ShortnerLink.test",
+                            "host": "0.0.0.0:8084",
                             "path": "api\/shortner-link\/v0\/links\/update",
                             "query": []
                         },
@@ -89,7 +89,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"link\": \"odit\"\n}"
+                            "raw": "{\n    \"main_link\": \"https:\\\/\\\/laravel.com\\\/\"\n}"
                         },
                         "description": "",
                         "response": []
@@ -100,7 +100,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "ShortnerLink.test",
+                            "host": "0.0.0.0:8084",
                             "path": "api\/shortner-link\/v0\/:short_link",
                             "query": []
                         },
@@ -128,7 +128,7 @@
                     "request": {
                         "url": {
                             "protocol": "http",
-                            "host": "ShortnerLink.test",
+                            "host": "0.0.0.0:8084",
                             "path": "api\/shortner-link\/v0\/database\/:short_link",
                             "query": []
                         },
